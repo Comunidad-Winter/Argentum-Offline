@@ -1,0 +1,37 @@
+Line 32: Class SocketWrenchCtrl.Socket of control Socket1 was not a loaded control class.
+Line 606: Class RichTextLib.RichTextBox of control RecTxt was not a loaded control class.
+Line 35: The property name _Version in Socket1 is invalid.
+Line 36: The property name _ExtentX in Socket1 is invalid.
+Line 37: The property name _ExtentY in Socket1 is invalid.
+Line 38: The property name _StockProps in Socket1 is invalid.
+Line 39: The property name AutoResolve in Socket1 is invalid.
+Line 40: The property name Backlog in Socket1 is invalid.
+Line 41: The property name Binary in Socket1 is invalid.
+Line 42: The property name Blocking in Socket1 is invalid.
+Line 43: The property name Broadcast in Socket1 is invalid.
+Line 44: The property name BufferSize in Socket1 is invalid.
+Line 45: The property name HostAddress in Socket1 is invalid.
+Line 46: The property name HostFile in Socket1 is invalid.
+Line 47: The property name HostName in Socket1 is invalid.
+Line 48: The property name InLine in Socket1 is invalid.
+Line 49: The property name Interval in Socket1 is invalid.
+Line 50: The property name KeepAlive in Socket1 is invalid.
+Line 51: The property name Library in Socket1 is invalid.
+Line 52: The property name Linger in Socket1 is invalid.
+Line 53: The property name LocalPort in Socket1 is invalid.
+Line 54: The property name LocalService in Socket1 is invalid.
+Line 55: The property name Protocol in Socket1 is invalid.
+Line 56: The property name RemotePort in Socket1 is invalid.
+Line 57: The property name RemoteService in Socket1 is invalid.
+Line 58: The property name ReuseAddress in Socket1 is invalid.
+Line 59: The property name Route in Socket1 is invalid.
+Line 60: The property name Timeout in Socket1 is invalid.
+Line 61: The property name Type in Socket1 is invalid.
+Line 62: The property name Urgent in Socket1 is invalid.
+Line 614: The property name _ExtentX in RecTxt is invalid.
+Line 615: The property name _ExtentY in RecTxt is invalid.
+Line 616: The property name _Version in RecTxt is invalid.
+Line 618: The property name ReadOnly in RecTxt is invalid.
+Line 619: The property name ScrollBars in RecTxt is invalid.
+Line 620: The property name DisableNoScroll in RecTxt is invalid.
+Line 621: The property name TextRTF in RecTxt is invalid.

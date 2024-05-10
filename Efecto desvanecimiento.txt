@@ -1,0 +1,48 @@
+Option Explicit
+
+Const LWA_COLORKEY = &H1
+Const LWA_ALPHA = &H2
+Const GWL_EXSTYLE = (-20)
+Const WS_EX_LAYERED = &H80000
+Private Declare Function GetWindowLong Lib "user32" Alias "GetWindowLongA" (ByVal hWnd As Long, ByVal nIndex As Long) As Long
+Private Declare Function SetWindowLong Lib "user32" Alias "SetWindowLongA" (ByVal hWnd As Long, ByVal nIndex As Long, ByVal dwNewLong As Long) As Long
+Private Declare Function SetLayeredWindowAttributes Lib "user32" (ByVal hWnd As Long, ByVal crKey As Long, ByVal bAlpha As Byte, ByVal dwFlags As Long) As Long
+Private Ret As Long
+Private cont2 As Integer
+
+Private Sub Form_Load()
+   cont2 = 255
+    Ret = GetWindowLong(Me.hWnd, GWL_EXSTYLE)
+    Ret = Ret Or WS_EX_LAYERED
+    SetWindowLong Me.hWnd, GWL_EXSTYLE, Ret
+    Timer1.Interval = 1
+    Timer2.Interval = 1
+    Timer2.Enabled = False
+    Timer1.Enabled = True
+End Sub
+
+Private Sub Form_QueryUnload(Cancel As Integer, UnloadMode As Integer)
+Cancel = True
+Timer2.Enabled = True
+End Sub
+
+Private Sub Timer1_Timer()
+    Static cont As Integer
+    cont = cont + 5
+    If cont > 255 Then
+        cont = 0
+        Timer1.Enabled = False
+    Else
+        SetLayeredWindowAttributes Me.hWnd, 0, cont, LWA_ALPHA
+    End If
+End Sub
+ 
+Private Sub Timer2_Timer()
+    cont2 = cont2 - 5
+    If cont2 < 0 Then
+        Timer2.Enabled = False
+        End
+    Else
+        SetLayeredWindowAttributes Me.hWnd, 0, cont2, LWA_ALPHA
+    End If
+End Sub

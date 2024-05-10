@@ -1,0 +1,7 @@
+Código:
+[Nick]
+Name=
+[Passwd]
+Pass=
+[Check]
+A=0
